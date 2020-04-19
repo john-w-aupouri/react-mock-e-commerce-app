@@ -76,14 +76,3 @@ code {
   display: inline-block;
 }
 
-.footer {
-  position: relative;
-  padding: 0;
-}
-
-.footer-logo {
-  position: absolute;
-  right: 0;
-  padding: 0;
- 
-}
