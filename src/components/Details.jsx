@@ -50,7 +50,6 @@ export default class Details extends Component {
                   </Link>
                   <ButtonContainer
                     cart
-                    // borderColorChange
                     disabled={inCart ? true : false}
                     onClick={() => {
                       // from context.js
