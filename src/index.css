@@ -65,14 +65,20 @@ code {
 }
 
 .logo-outer-wrapper .logo .logo-inner-wrapper .right-arrow {
-  /* margin-top: 3px; */
+  /* margin-top: 1px; */
   color: purple;
   display: inline-block;
 }
 
 .logo-outer-wrapper .logo .logo-inner-wrapper .left-arrow {
-  /* margin-top: 3px; */
-  color: white;
+  margin-top: 1px;
+  color: purple;
   display: inline-block;
 }
 
+.logo-outer-wrapper .logo .logo-inner-wrapper .slash {
+  margin-top: 2px;
+  color: purple;
+  font-weight: bold;
+  display: inline-block;
+}

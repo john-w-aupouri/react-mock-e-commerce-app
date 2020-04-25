@@ -19,9 +19,9 @@ export default class Product extends Component {
               <Link to="/details">
                 <img 
                   src={img} 
-                  style={{width: "15.5rem", height: "15.5rem"}} 
+                  // style={{width: "15.5rem", height: "15.5rem"}} 
                   alt="product" 
-                  classname="card-img-top" 
+                  className="card-img-top" 
                 />
               </Link>
               <button 

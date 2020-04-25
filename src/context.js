@@ -29,7 +29,7 @@ class ProductProvider extends Component {
       const singleItem = {...item}
       cloneOfProducts = [...cloneOfProducts, singleItem] 
     })
-    // Then clone the value creating a new const equal to an onbject with the previously returned value spread into it.
+    // Then clone the value creating a new variable equal to an onbject with the previously returned value spread into it.
     this.setState(() => {
       return {products: cloneOfProducts}
     })
@@ -107,11 +107,16 @@ class ProductProvider extends Component {
   }
 
   decrement = id => {
+    // get cart from state
     let cloneOfCart = [...this.state.cart]
+    // get specific item
     const selectedProduct = cloneOfCart.find(item => item.id === id)
     const index = cloneOfCart.indexOf(selectedProduct)
+    // get index of item
     const product = cloneOfCart[index]
+
     product.count = product.count - 1
+
     if(product.count === 0) {
       this.removeItem(id)
     } else {
@@ -124,8 +129,10 @@ class ProductProvider extends Component {
     // create temporary arrays to get products and cart from state
     let cloneOfProducts = [...this.state.products]
     let cloneOfCart = [...this.state.cart]
+
     // filter to find item without id
     cloneOfCart = cloneOfCart.filter(item => item.id !== id)
+
     // get the index of the product in the cloneOfProduct array
     const index = cloneOfProducts.indexOf(this.getItem(id))
     let removedProduct = cloneOfProducts[index]
@@ -142,6 +149,7 @@ class ProductProvider extends Component {
       this.addTotals()
     })
   }
+
   clearCart = () => {
     this.setState(() => {
       return { cart: [] }
@@ -150,6 +158,7 @@ class ProductProvider extends Component {
       this.addTotals()
     })
   }
+  
   addTotals = () => {
     let subTotal = 0 // use this to collect all the values
     this.state.cart.map(item => (subTotal += item.total)) // each item will have a total prop

@@ -11,7 +11,7 @@ export default class ProductList extends Component {
         <div className="py-5">
           <div className="container">
             <Title name="the" title="products" />
-            <div className="row">
+            <div className="row" style={{textAlign: "center"}}>
               <ProductConsumer>
                 {value => {
                   return value.products.map(product => {

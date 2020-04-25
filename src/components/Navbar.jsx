@@ -15,6 +15,8 @@ export default class NavBar extends Component {
         <ul className="navbar-nav align-items-center">
           <li className="nav-item ml-5">
           <Link to="/" className="nav-link">
+            <i className="fas fa-cart-plus" />
+            {' '}
             Shop
           </Link>
           </li>   
