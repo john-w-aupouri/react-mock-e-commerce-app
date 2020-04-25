@@ -20,6 +20,7 @@ class Cart extends Component {
                   <div className="titleBox">
                     <Title name="your" title="cart" />
                   </div>
+                  <br />
                   <CartColumns />
                   <CartList value={value} />
                   <CartTotals 

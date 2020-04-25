@@ -3,14 +3,13 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { ButtonContainer } from "./ButtonContainer"
 import '../App.css'
-import Logo from './Logo'
 
 export default class NavBar extends Component {
   render() {
     return (
 
       <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">  
-        <Logo />
+        <h3><i class="fas fa-cube" style={{color: "red"}}></i></h3>
         
         <ul className="navbar-nav align-items-center">
           <li className="nav-item ml-5">
